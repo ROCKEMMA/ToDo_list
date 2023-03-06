@@ -1,0 +1,24 @@
+.item {
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 1.4rem;
+
+    margin: 1rem auto;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 5% 86% 5%;
+    grid-gap: 2%;
+}
+
+.clouse {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

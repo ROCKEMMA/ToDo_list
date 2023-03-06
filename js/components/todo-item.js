@@ -1,4 +1,8 @@
-export let todo_items = `
+function todo_items (){
+
+    let elemento;
+
+    elemento = `
     <div class="item">
         <input type="checkbox" id="checkbox">
         <p>
@@ -7,3 +11,8 @@ export let todo_items = `
         <span class="clouse">X</span>
     </div>
 `;
+
+return elemento;
+}
+
+export { todo_items };

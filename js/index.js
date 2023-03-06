@@ -1,12 +1,19 @@
-import { program_new_todo } from "./components/new_todo_buttom.js";
-import { todo_items } from "./components/todos.js";
+import { todo_items } from "./components/todo-item.js";
+import { lista_de_tareas } from "./lista-de-tareas.js";
 
 
-// LISTADO DE ToDos ACTUALIZADOS
-let root = document.querySelector(".root");
-root.innerHTML = todo_items;
+function cargar_listado_de_todos (){
 
+    let caja_todos = document.querySelector("#todos");
 
+    lista_de_tareas.forEach((Element)=>{
+        let componente = document.createElement("div");
 
-// PROGRAMAS
-program_new_todo();
+        componente.innerHTML = todo_items();
+
+        caja_todos.appendChild(componente);
+    });
+
+}
+
+cargar_listado_de_todos();
